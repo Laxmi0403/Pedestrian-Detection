@@ -32,5 +32,6 @@ Make sure you have Python and pip installed. You can install required packages u
 ## Prerequisites
 
 [![Install](https://img.shields.io/badge/pip-install-blue)](https://pip.pypa.io/en/stable/cli/pip_install/)
+pip install -r requirements.txt
 
 
