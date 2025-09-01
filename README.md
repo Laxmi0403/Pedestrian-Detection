@@ -24,5 +24,32 @@ Detects pedestrians in real-time using webcam or video.
 ![Haar Cascade](https://img.shields.io/badge/Haar%20Cascade-Pre-trained-red)  
 ![IDE](https://img.shields.io/badge/IDE-VS%20Code-brightgreen)  
 
+Getting Started
+Prerequisites
+
+Make sure you have Python and pip installed:
+
+python --version
+pip --version
+
+
+Install required packages:
+
+pip install opencv-python numpy
+
+Clone the Repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+Run the Project
+
+For webcam input:
+
+python ped.py
+
+
+For video file input:
+
+python ped.py --video path/to/video.mp4
 
 
