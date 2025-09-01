@@ -17,6 +17,7 @@ Detects pedestrians in real-time using webcam or video.
 
 ## **Built With**
 
-- ![Python](https://img.shields.io/badge/Python-3.10-green)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue)
-![NumPy](https://img.shields.io/badge/NumPy-1.23-orange
+![Python](https://img.shields.io/badge/Python-3.10-green)<br>
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue)<br>
+![NumPy](https://img.shields.io/badge/NumPy-1.23-orange)<br>
+
