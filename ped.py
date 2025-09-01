@@ -1,40 +1,46 @@
 import cv2
 
-# Initialize HOG descriptor/person detector
+# Open the video file
+cap = cv2.VideoCapture("test_video.mp4")  # ✅ Make sure this file exists!
+
+# Check if video opened successfully
+if not cap.isOpened():
+    print("❌ Error: Could not open video file. Check the path or file name.")
+    exit()
+
+# Initialize the HOG person detector
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-# Start webcam
-cap = cv2.VideoCapture(0)
-
-if not cap.isOpened():
-    print("Error: Could not open webcam.")
-    exit()
+print("✅ Video started. Press 'q' to quit.")
 
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("Error: Could not read frame.")
+        print("✅ End of video or cannot read the frame.")
         break
 
-    # Resize frame for faster processing
     frame = cv2.resize(frame, (640, 480))
+    regions, _ = hog.detectMultiScale(frame, winStride=(4, 4), padding=(4, 4), scale=1.05)
 
-    # Detect people in the frame
-    boxes, weights = hog.detectMultiScale(frame, winStride=(8,8))
-
-    # Draw bounding boxes
-    for (x, y, w, h) in boxes:
+    # Draw rectangles around detected people
+    for i, (x, y, w, h) in enumerate(regions, start=1):
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv2.putText(frame, f"Person {i}", (x, y - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
-    # Show video
-    cv2.imshow("Pedestrian Detection (HOG + SVM)", frame)
+    # 👀 Show the video frame with detections
+    cv2.imshow("Pedestrian Detection", frame)
 
-    # Quit when 'q' is pressed
+    # 🛑 Wait for 1ms and check for 'q' key to quit
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        print("❎ Quitting...")
         break
 
+# Cleanup
 cap.release()
 cv2.destroyAllWindows()
+
+
 
 
