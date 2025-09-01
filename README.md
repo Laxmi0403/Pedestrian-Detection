@@ -31,8 +31,6 @@ Make sure you have Python and pip installed. You can install required packages u
 
 ## Prerequisites
 
-This file lists all the Python packages your project needs. For example:
+[![Install](https://img.shields.io/badge/pip-install-blue)](https://pip.pypa.io/en/stable/cli/pip_install/)
 
-opencv-python
-numpy
 
