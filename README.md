@@ -29,14 +29,10 @@ Detects pedestrians in real-time using webcam or video.
 
 Make sure you have Python and pip installed. You can install required packages using pip.
 
-- Python packages
-```bash
-pip install opencv-python numpy
+## Prerequisites
 
-ou can also add links for each package:
+This file lists all the Python packages your project needs. For example:
 
-OpenCV
+opencv-python
+numpy
 
-NumPy
-
-git clone https://github.com/your_username/your_repo.git
