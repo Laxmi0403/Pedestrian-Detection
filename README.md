@@ -17,10 +17,6 @@ Detects pedestrians in real-time using webcam or video.
 
 ## **Built With**
 
-- **Python 3.x** – Programming language used for implementation  
-- **OpenCV** – Library for computer vision and image processing  
-- **NumPy** – Library for numerical operations and array handling  
-- **Haar Cascade Classifiers** – Pre-trained models for human detection  
-- **Visual Studio Code / PyCharm** – Recommended IDEs for development
 - ![Python](https://img.shields.io/badge/Python-3.10-green)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue)
+![NumPy](https://img.shields.io/badge/NumPy-1.23-orange
