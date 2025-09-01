@@ -16,8 +16,9 @@ Detects pedestrians in real-time using webcam or video.
 - Simple and lightweight Python implementation.
 
 ## **Built With**
-
-![Python](https://img.shields.io/badge/Python-3.10-green)<br>
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue)<br>
-![NumPy](https://img.shields.io/badge/NumPy-1.23-orange)<br>
+![Python](https://img.shields.io/badge/Python-3.10-green)  
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue)  
+![NumPy](https://img.shields.io/badge/NumPy-1.23-orange)  
+![Haar Cascade](https://img.shields.io/badge/Haar%20Cascade-Pre-trained-red)  
+![IDE](https://img.shields.io/badge/IDE-VS%20Code-brightgreen)
 
