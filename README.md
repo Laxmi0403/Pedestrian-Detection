@@ -24,8 +24,8 @@ Detects pedestrians in real-time using webcam or video.
 ![Haar Cascade](https://img.shields.io/badge/Haar%20Cascade-Pre-trained-red)  
 ![IDE](https://img.shields.io/badge/IDE-VS%20Code-brightgreen)  
 
-Getting Started
-Prerequisites
+# **Getting Started**
+#*Prerequisites*
 
 Make sure you have Python and pip installed:
 
