@@ -1,7 +1,7 @@
 # Pedestrian-Detection
 Real Time Pedestrain Detection Using Haar Cascades (with OPEN CV)
 
-##About The Project
+# **About This Project**
 
 This project is a real-time pedestrian detection system developed using Python and OpenCV. 
 It detects humans in video streams or webcam feeds and highlights them with bounding boxes. 
