@@ -25,17 +25,16 @@ Detects pedestrians in real-time using webcam or video.
 ![IDE](https://img.shields.io/badge/IDE-VS%20Code-brightgreen)  
 
 # **Getting Started**
-#*Prerequisites*
+##*Prerequisites*
 
 Make sure you have Python and pip installed:
 
 python --version
 pip --version
 
+Install the package: [packagename](https://pypi.org/project/packagename/)  
+Command: `pip install packagename`
 
-Install required packages:
-
-pip install opencv-python numpy
 
 Clone the Repository
 git clone https://github.com/your-username/your-repo-name.git
